@@ -1,3 +1,4 @@
+# http://192.168.1.2:8080/
 wget http://lilnetwork.com/download/raspberrypi/mjpg-streamer.tar.gz
 tar xvzf mjpg-streamer.tar.gz
 sudo apt-get install libjpeg8-dev
