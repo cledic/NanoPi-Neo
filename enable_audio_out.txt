@@ -1,0 +1,9 @@
+I have located a problem. When I went into alsamixer I noticed that a parameter called "Audio lineout" 
+
+was set to false. In the TUI I was not able to changed the parameter but I was able to save the state 
+
+in a file by using alsactl --file ~/.config/asound.state store. In the .state file I manually changed 
+
+the "Audio lineout" parameter to true and reloaded the alsamixer with the `alsactl --file ~/.config/asound.state restore` 
+
+command. Now `speaker-test -D sysdefault:CARD=audiocodec -twav -c2` plays perfectly.
