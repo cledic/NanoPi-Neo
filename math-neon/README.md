@@ -23,7 +23,7 @@ Modificare questa riga come di seguito:
 set(CMAKE_CXX_FLAGS "-std=gnu99 -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=hard")
 ```
 
-#Risultati
+# Risultati
 
 ```
 root@nanopineo:~/math-neon/build# ./src/math_debug
