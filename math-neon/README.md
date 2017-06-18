@@ -21,7 +21,7 @@ vi ../src/CMakeLists.txt
 Modificare questa riga come di seguito:
 
 ```C
-set(CMAKE_CXX_FLAGS "-std=gnu99 -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=hard")
+set(CMAKE_CXX_FLAGS "-O3 -std=gnu99 -march=armv7-a -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard")
 ```
 
 Alla fine della compilazione eseguire il programma:
