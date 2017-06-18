@@ -1,3 +1,4 @@
+
 # Compilazione di math-neon
 
 Di seguito le istruzioni per scaricare e compilare su NanoPi Neo il programma math-debug
@@ -21,6 +22,11 @@ Modificare questa riga come di seguito:
 
 ```C
 set(CMAKE_CXX_FLAGS "-std=gnu99 -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=hard")
+```
+
+Alla fine della compilazione eseguire il programma:
+```C
+./src/math_debug
 ```
 
 # Risultati
